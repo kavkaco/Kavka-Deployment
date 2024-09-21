@@ -23,12 +23,12 @@ variable "repositories" {
     {
       name    = "Kavka-Core",
       url     = "https://github.com/kavkaco/Kavka-Core.git"
-      command = "pwd"
+      command = "docker-compose up -d --build"
     },
     {
       name    = "Kavka-Web",
       url     = "https://github.com/kavkaco/Kavka-Web.git"
-      command = "pwd"
+      command = "docker-compose up -d --build"
     }
   ]
 }

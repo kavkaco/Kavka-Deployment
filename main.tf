@@ -17,6 +17,11 @@ resource "ssh_resource" "default_server" {
   }
 
   provisioner "file" {
+    source      = "./config/core/docker-compose.production.yml"
+    destination = "/root/Kavka-Core/docker-compose.yml"
+  }
+
+  provisioner "file" {
     source      = "./config/core/config.production.yaml"
     destination = "/root/Kavka-Core/config/config.production.yaml"
   }
