@@ -18,9 +18,17 @@ variable "server_root" {
   default     = "/root"
 }
 
-variable "build_core" {
+variable "repositories" {
   default = [
-    "screenfetch"
-    # "docker-compose up -d"
+    {
+      name    = "Kavka-Core",
+      url     = "https://github.com/kavkaco/Kavka-Core.git"
+      command = "pwd"
+    },
+    {
+      name    = "Kavka-Web",
+      url     = "https://github.com/kavkaco/Kavka-Web.git"
+      command = "pwd"
+    }
   ]
 }

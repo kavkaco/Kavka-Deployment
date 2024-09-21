@@ -1,1 +1,6 @@
 config/core/config.production.*
+config/web/environment.production.*
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+.terraform
